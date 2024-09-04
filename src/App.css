@@ -3,6 +3,40 @@ body {
   padding: 0;
 }
 .map-container {
-  width: 100vw;
-  height: 100vh
+   min-width:60em;
+  flex: 2;
+}
+.info-container {
+  padding:2.5em;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  min-width:40em;
+  flex: 1;
+  color: #f4f4f5;
+}
+.info-container {
+  position: relative;
+  font-family: source-serif-pro, sans-serif;
+  background-color: #020617;
+}
+.info-container h1 {
+  font-size: 3rem;
+  margin:0;
+}
+.info-container h2 {
+  margin:0;
+  font-size: 1.5rem;
+  font-weight:100;
+}
+.timeline-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
