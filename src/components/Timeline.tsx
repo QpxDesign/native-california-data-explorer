@@ -18,12 +18,12 @@ export default function Timeline(props: TimelineProps) {
   return (
     <div className="timeline-wrapper full-center">
       <span className="start_year">1590</span>
-      <div className="slider" style={{width:"90%", height:"1.5em", background: "white", borderRadius:"10em", margin: "1em", position:"relative", padding:0}}>
-        <div className="thumb"  style={{left: String(scale(year, MIN_YEAR, MAX_YEAR, 0, 100)) + "%", transition:"2s"}}>
+      <div className="slider" style={{width:"90%", height:"1.5em", background: "white", borderRadius:"10em", margin: "1em", position:"relative", padding:0, marginTop:"2em"}}>
+        <div className="thumb"  style={{left: String(scale(year, MIN_YEAR, MAX_YEAR, 0, 100)) + "%", transition:"2.5s", position:"relative"}}>
         <img src={TimelineIcon} style={{background:"transparent"}} />
+          <span style={{position:"absolute", margin: "0 auto"}}>{year}</span>
         </div>
       </div>
-
       <span className="start_year">2024</span>
     </div>);
 }

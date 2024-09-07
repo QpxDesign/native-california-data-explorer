@@ -22,12 +22,12 @@ body {
   flex: 1;
   color: #f4f4f5;
   max-height: 100vh;
-}
-.info-container {
   position: relative;
   font-family: source-serif-pro, sans-serif;
   background-color: #020617;
+  padding-bottom:0;
 }
+
 .info-container h1 {
   font-size: 3rem;
   margin:0;
@@ -41,10 +41,8 @@ body {
 .timeline-wrapper {
   width: 90%;
   margin: 0 auto;
-  position: absolute;
   bottom:0;
-  left: 50%;
-  transform: translate(-50%, 0);
+
   margin-bottom: 1em;
 }
 .thumb {
@@ -54,4 +52,3 @@ body {
   height: 3.5em;
   bottom:1em;
 }
-

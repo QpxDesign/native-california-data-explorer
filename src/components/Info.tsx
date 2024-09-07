@@ -27,12 +27,12 @@ interface InfoSectionItem {
 export default function Info() {
   const [pos, setPos] = useState(0);
   const [textOpacity, setTextOpacity] = useState(0);
-  const NEXT_SLIDE_THRESHOLD = 20;
+  const NEXT_SLIDE_THRESHOLD = 200;
   const dispatch = useDispatch();
 
   useEffect(() => {
     if (pos >= NEXT_SLIDE_THRESHOLD) {
-        let  SectionInfo = InfoSections.find((a) => a.index === Math.floor(pos % NEXT_SLIDE_THRESHOLD));
+        let  SectionInfo = InfoSections.find((a) => a.index === Math.floor(pos / NEXT_SLIDE_THRESHOLD));
         dispatch(navigateTo([SectionInfo?.map_position.lat, SectionInfo?.map_position.long, SectionInfo?.map_position.zoom]))
         dispatch(setYear(SectionInfo?.year))
     }
@@ -42,11 +42,11 @@ export default function Info() {
     if (pos >= NEXT_SLIDE_THRESHOLD) {
     setTimeout(() => {
       console.log(textOpacity);
-      if (textOpacity < 1 && textOpacity + 0.05 < 1) {
+      if (textOpacity < 1 && textOpacity + 0.01 < 1) {
         // fade in
-        setTextOpacity(textOpacity + 0.05);
+        setTextOpacity(textOpacity + 0.01);
       }
-    }, 3);
+    }, 1);
     }
   }, [pos, textOpacity]);
 
@@ -61,10 +61,11 @@ export default function Info() {
     </div>
     );
   } else {
-    let  SectionInfo = InfoSections.find((a) => a.index === Math.floor(pos % NEXT_SLIDE_THRESHOLD));
+    let  SectionInfo = InfoSections.find((a) => a.index === Math.floor(pos / NEXT_SLIDE_THRESHOLD));
         return (
-    <div className="info-container fade-in" onWheel={() => Math.floor(pos % NEXT_SLIDE_THRESHOLD) < InfoSections.length ? setPos(pos+1) : setPos(pos)}>
-      <div style={{opacity: textOpacity}}>
+    <div className="info-container fade-in" onWheel={() => Math.floor(pos / NEXT_SLIDE_THRESHOLD) < InfoSections.length ? setPos(pos+1) : setPos(pos)}>
+      <div style={{opacity: textOpacity, overflowX:"scroll", padding: 0, margin:0}}>
+          {pos}
         <img src={SectionInfo?.image_slug} style={{objectFit:"contain", width:"30em",marginRight:"auto"}}/>
         <h1 style={{fontSize:"2.3rem",textAlign:"left",width:"95%"}}>{SectionInfo?.title ?? "error"}</h1>
         <p style={{fontSize:"1.2rem",textAlign:"left",width:"95%"}}>{SectionInfo?.text ?? "error"}</p>
@@ -75,5 +76,3 @@ export default function Info() {
   }
 
 }
-
-//    <span className="full-center" style={{fontSize:"1.2em", }}><BsArrowDown style={{padding:0, margin: 0, marginRight: ".2em"}}/> Scroll Down</span>

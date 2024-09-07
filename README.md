@@ -4,7 +4,7 @@
 - [ ] Add in graphical system/interface for mapping
 - [ ] Create API and Database to allow admins to create/edit Map Shapes
 - [ X ] Make timeline animated
-- [ ] Make timeline not cover any text
+- [ X ] Make timeline not cover any text
 - [ ] Add Year to timeline thumb icon
 - [ ] Add in support for multiple photos in Timeline items
-- [ ] Sync up map/timeline/text fade-in times
+- [ X ] Sync up map/timeline/text fade-in times

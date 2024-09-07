@@ -28,7 +28,7 @@ export default function Map() {
         bearing: 130,
         pitch: 75
     };
-    map.current?.flyTo({maxDuration: 5000, essential: false, zoom: map_pos[2], center: [map_pos[1], map_pos[0]]});
+    map.current?.flyTo({duration: 2500, essential: false, zoom: map_pos[2], center: [map_pos[1], map_pos[0]]});
   },[map_pos])
 
   useEffect(() => {
