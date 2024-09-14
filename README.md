@@ -5,6 +5,9 @@
 - [ ] Create API and Database to allow admins to create/edit Map Shapes
 - [ X ] Make timeline animated
 - [ X ] Make timeline not cover any text
-- [ ] Add Year to timeline thumb icon
+- [ X ] Add Year to timeline thumb icon
 - [ ] Add in support for multiple photos in Timeline items
 - [ X ] Sync up map/timeline/text fade-in times
+- [ ] add in algorthim for placing mission towns (placing buildings around missions over time)
+- [ ] Remove markers as timeline goes backwords
+- [ ] find/make better 3d models

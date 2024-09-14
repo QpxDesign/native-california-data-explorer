@@ -1,4 +1,5 @@
 import { MapPosition } from "./MapPosition";
+import { ModelProps } from "../components/map/three-d";
 
 export interface MapItem {
   kind: string; // I.E. Point, Shape, etc.
@@ -10,4 +11,5 @@ export interface MapItem {
   alt_text: string;
   title: string;
   year?: number;
+  three_d_model_props?: ModelProps;
 }

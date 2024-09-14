@@ -12,15 +12,22 @@ import { FeatureCollection, Geometry, GeoJsonProperties } from "geojson";
 import { Polygon } from "react-native-maps";
 import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
+import { Generate3DModel } from "./map/three-d";
 
 export default function Map() {
   const map_pos = useSelector((state: RootState) => state.map.value);
+  const tyear = useSelector((state: RootState) => state.timeline.value);
+  const [year, setYear] = useState(1590);
+  const [mapids, setMapids] = useState([""]);
   const DEFAULT_MAP_LOCATION = [36.7783, -119.4179, 5];
   const dispatch = useDispatch();
   mapboxgl.accessToken =
     "pk.eyJ1IjoicXBhdHdhcmRoYW4tb3h5IiwiYSI6ImNtMG9hdTdvZjA2bW0ybW9pOG9lMnl5ZTEifQ.qIkMeJEiiQTMx5TZM0bxOg";
   const mapContainer = useRef(null);
   const map = useRef<mapboxgl.Map | null>(null);
+  useEffect(() => {
+    setYear(tyear);
+  },[tyear])
   useEffect(() => {
     console.log(map_pos);
     if (map_pos === undefined) {
@@ -64,14 +71,39 @@ export default function Map() {
         showUserHeading: true,
       })
     );
-    MapData.forEach((p: MapItem) => {
+    map.current.addControl(new mapboxgl.NavigationControl());
+
+    map?.current?.on("load", function () {
+      map?.current?.getStyle()?.layers.map(function (layer) {
+        if (layer.type === "symbol") {
+          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
+        }
+        if (layer.id.indexOf("road") >= 0) {
+          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
+        }
+      });
+    });
+  });
+  useEffect(() => {
+    if (map === null || map.current === null) return;
+    if (map.current.loaded() === false) return;
+        MapData.forEach((p: MapItem) => {
       if (map.current == null) {
         return;
       }
-      if (p.kind === "point") {
-        GenerateMarker(p).addTo(map?.current);
+      if (mapids.indexOf(p.id) !== -1) {
+          return false;
       }
+      if (p.kind === "point" && p.year !== undefined && p.year <= year ) {
+          mapids.push(p.id);
+          GenerateMarker(p).addTo(map?.current);
+      }
+      if (p.kind === "3D_Shape" && p.three_d_model_props !== undefined) {
+          mapids.push(p.id);
+           map?.current?.addLayer(Generate3DModel(map,p.three_d_model_props));
+        }
       if (p.kind === "shape") {
+        mapids.push(p.id);
         GetGemoetryFromFile(p.shape_file_slug ?? "").then((g) => {
           map?.current?.addSource(p.id, {
             type: "geojson",
@@ -90,18 +122,7 @@ export default function Map() {
         });
       }
     });
-    map.current.addControl(new mapboxgl.NavigationControl());
 
-    map?.current?.on("load", function () {
-      map?.current?.getStyle()?.layers.map(function (layer) {
-        if (layer.type === "symbol") {
-          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
-        }
-        if (layer.id.indexOf("road") >= 0) {
-          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
-        }
-      });
-    });
-  });
+  }, [year])
   return <div className="map-container" ref={mapContainer} />;
 }
