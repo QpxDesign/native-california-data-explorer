@@ -14,11 +14,18 @@ import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
 import { Generate3DModel } from "./map/three-d";
 
+
+type Marker = {
+  id: string,
+  marker: mapboxgl.Marker
+}
+
 export default function Map() {
   const map_pos = useSelector((state: RootState) => state.map.value);
   const tyear = useSelector((state: RootState) => state.timeline.value);
   const [year, setYear] = useState(1590);
-  const [mapids, setMapids] = useState([""]);
+  const [markers, setMarkers] = useState<Array<Marker>>([]);
+  const [mapids, setMapids] = useState<Array<String>>([]);
   const DEFAULT_MAP_LOCATION = [36.7783, -119.4179, 5];
   const dispatch = useDispatch();
   mapboxgl.accessToken =
@@ -92,22 +99,29 @@ export default function Map() {
         return;
       }
       if (mapids.indexOf(p.id) !== -1) {
+        return;
+      }
+      if (markers.find((m) => m.id === p.id)) {
           return false;
       }
       if (p.kind === "point" && p.year !== undefined && p.year <= year ) {
-          mapids.push(p.id);
-          GenerateMarker(p).addTo(map?.current);
+          let m = GenerateMarker(p);
+          m.addTo(map.current)
+          markers.push({
+            id: p.id,
+            marker:m
+        })
       }
       if (p.kind === "3D_Shape" && p.three_d_model_props !== undefined) {
           mapids.push(p.id);
-           map?.current?.addLayer(Generate3DModel(map,p.three_d_model_props));
+          map?.current?.addLayer(Generate3DModel(map,p.three_d_model_props));
         }
-      if (p.kind === "shape") {
+      if (p.kind === "shape" && p.id === "B") { // TEST
         mapids.push(p.id);
         GetGemoetryFromFile(p.shape_file_slug ?? "").then((g) => {
           map?.current?.addSource(p.id, {
             type: "geojson",
-            data: g,
+             data: g,
           });
           map?.current?.addLayer({
         id: p.id,
@@ -123,6 +137,24 @@ export default function Map() {
       }
     });
 
-  }, [year])
+  }, [year]);
+  useEffect(() => {
+    if (map === null || map.current === null) return;
+    markers.forEach((m) => {
+
+      let d = MapData.find((a) => a.id === m.id);
+      if ((d?.year ?? 100000) < year) {
+        console.log("added!")
+        if (map.current === null) {
+          console.log("WARNING")
+        }
+        if (map === null || map.current === null) return;
+        map.current._addMarker(m.marker)
+      } else {
+        m.marker.remove();
+        setMarkers(markers.filter((a) => a.id !== m.id))
+      }
+    })
+  }, [markers, year])
   return <div className="map-container" ref={mapContainer} />;
 }
