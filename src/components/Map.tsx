@@ -81,12 +81,29 @@ export default function Map() {
     map.current.addControl(new mapboxgl.NavigationControl());
 
     map?.current?.on("load", function () {
+      map?.current?.setPaintProperty("landuse", 'fill-color', "#E0E0CF"); //#EE4B2B
+      const keepKeywords = ["land", "water", "wet", "hill", "pitch-"]
       map?.current?.getStyle()?.layers.map(function (layer) {
+                console.log(layer)
         if (layer.type === "symbol") {
           map?.current?.setLayoutProperty(layer.id, "visibility", "none");
+          return;
         }
         if (layer.id.indexOf("road") >= 0) {
           map?.current?.setLayoutProperty(layer.id, "visibility", "none");
+          return;
+        }
+        var keep = false;
+        for (var i=0; i < keepKeywords.length; i++) {
+          if (layer.id.search(keepKeywords[i]) !== -1) {
+            keep = true
+            break;
+          }
+        }
+
+        if (!keep) {
+          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
+        } else {
         }
       });
     });
