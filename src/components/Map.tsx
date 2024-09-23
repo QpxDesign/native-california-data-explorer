@@ -13,7 +13,9 @@ import { Polygon } from "react-native-maps";
 import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
 import { Generate3DModel } from "./map/three-d";
-
+import {StyleMap} from "./map/StyleMap"
+// @ts-ignore
+import { Threebox } from "threebox-plugin";
 
 type Marker = {
   id: string,
@@ -25,7 +27,10 @@ export default function Map() {
   const tyear = useSelector((state: RootState) => state.timeline.value);
   const [year, setYear] = useState(1590);
   const [markers, setMarkers] = useState<Array<Marker>>([]);
-  const [mapids, setMapids] = useState<Array<String>>([]);
+  const [models, setModels] = useState<Array<MapItem>>([])
+  const [fireda, setFireda] = useState<Boolean>(false);
+  const [firedb, setFiredb] = useState<Boolean>(false);
+
   const DEFAULT_MAP_LOCATION = [36.7783, -119.4179, 5];
   const dispatch = useDispatch();
   mapboxgl.accessToken =
@@ -35,6 +40,7 @@ export default function Map() {
   useEffect(() => {
     setYear(tyear);
   },[tyear])
+
   useEffect(() => {
     console.log(map_pos);
     if (map_pos === undefined) {
@@ -68,6 +74,7 @@ export default function Map() {
       style: "mapbox://styles/mapbox/outdoors-v12",
       center: [DEFAULT_MAP_LOCATION[1], DEFAULT_MAP_LOCATION[0]], //
       zoom: DEFAULT_MAP_LOCATION[2],
+
     });
     map.current.addControl(
       new mapboxgl.GeolocateControl({
@@ -78,100 +85,62 @@ export default function Map() {
         showUserHeading: true,
       })
     );
+    StyleMap(map)
     map.current.addControl(new mapboxgl.NavigationControl());
-
-    map?.current?.on("load", function () {
-      map?.current?.setPaintProperty("landuse", 'fill-color', "#E0E0CF"); //#EE4B2B
-      const keepKeywords = ["land", "water", "wet", "hill", "pitch-"]
-      map?.current?.getStyle()?.layers.map(function (layer) {
-                console.log(layer)
-        if (layer.type === "symbol") {
-          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
-          return;
-        }
-        if (layer.id.indexOf("road") >= 0) {
-          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
-          return;
-        }
-        var keep = false;
-        for (var i=0; i < keepKeywords.length; i++) {
-          if (layer.id.search(keepKeywords[i]) !== -1) {
-            keep = true
-            break;
-          }
-        }
-
-        if (!keep) {
-          map?.current?.setLayoutProperty(layer.id, "visibility", "none");
-        } else {
-        }
-      });
-    });
   });
   useEffect(() => {
-    if (map === null || map.current === null) return;
-    if (map.current.loaded() === false) return;
-        MapData.forEach((p: MapItem) => {
-      if (map.current == null) {
+    if (!map.current?.loaded()) return;
+    MapData.forEach((md) => {
+    if (md.three_d_model_props === undefined) {
         return;
       }
-      if (mapids.indexOf(p.id) !== -1) {
-        return;
-      }
-      if (markers.find((m) => m.id === p.id)) {
-          return false;
-      }
-      if (p.kind === "point" && p.year !== undefined && p.year <= year ) {
-          let m = GenerateMarker(p);
-          m.addTo(map.current)
-          markers.push({
-            id: p.id,
-            marker:m
-        })
-      }
-      if (p.kind === "3D_Shape" && p.three_d_model_props !== undefined) {
-          mapids.push(p.id);
-          map?.current?.addLayer(Generate3DModel(map,p.three_d_model_props));
-        }
-      if (p.kind === "shape" && p.id === "B") { // TEST
-        mapids.push(p.id);
-        GetGemoetryFromFile(p.shape_file_slug ?? "").then((g) => {
-          map?.current?.addSource(p.id, {
-            type: "geojson",
-             data: g,
-          });
-          map?.current?.addLayer({
-        id: p.id,
-        type: 'fill',
-        source: p.id,
-        layout: {},
-        paint: {
-          'fill-color': '#0080ff',
-          'fill-opacity': 0.5
-        }
-      });
-        });
-      }
-    });
-
-  }, [year]);
-  useEffect(() => {
-    if (map === null || map.current === null) return;
-    markers.forEach((m) => {
-
-      let d = MapData.find((a) => a.id === m.id);
-      if ((d?.year ?? 100000) < year) {
-        console.log("added!")
-        if (map.current === null) {
-          console.log("WARNING")
-        }
-        if (map === null || map.current === null) return;
-        map.current._addMarker(m.marker)
-      } else {
-        m.marker.remove();
-        setMarkers(markers.filter((a) => a.id !== m.id))
-      }
+    if((md.year ?? 10000) < year) {
+        map.current?.setLayoutProperty(md.three_d_model_props?.id, "visibility","visible")
+        console.log("SHOWN - " + md.three_d_model_props?.id)
+    }
+    if((md.year ?? 0) > year) {
+      //map.current?.setLayoutProperty(md.three_d_model_props?.id, "visibility","none")
+     // console.log("HIDDEN - " + md.three_d_model_props?.id)
+    }
     })
-  }, [markers, year])
+  }, [year])
+  useEffect(() => {
+    if (!fireda && map.current?.loaded() && map.current !== null) {
+      console.log("ADDED")
+      setFireda(true)
+       MapData.forEach((md) => {
+        if (md.three_d_model_props !== undefined && map.current !== null) {
+          let a = new Threebox(
+        map.current,
+        map.current.getCanvas().getContext("webgl"),
+        { defaultLights: true },
+      );
+            map.current?.addLayer(Generate3DModel(map, md.three_d_model_props, md.year, a));
+            map.current?.setLayoutProperty(md.three_d_model_props?.id, "visibility","none")
+        }
+               });
+    }
+       })
+  useEffect(() => {
+    MapData.forEach((md) => {
+      if (md.kind !== "point") return;
+      if (markers.find((m) => m.id === md.id) === undefined && (md?.year ?? 100000) < year) {
+        if (map === null || map.current === null) return;
+        let m = GenerateMarker(md);
+        m.addTo(map.current)
+        setMarkers(markers => [...markers, {id: md.id, marker: m}])
+      }
+      if (markers.find((m) => m.id === md.id) !== undefined && (md?.year ?? 0) > year) {
+        markers.find((m) => m.id === md.id)?.marker.remove();
+        let a = markers.find((m) => m.id === md.id);
+        if (a !== undefined) {
+          map.current?._removeMarker(a.marker);
+        }
+
+        setMarkers(markers.filter((a) => a.id !== md.id))
+      }
+
+    })
+  }, [year])
   return <div className="map-container" ref={mapContainer} />;
 }

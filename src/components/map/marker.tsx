@@ -21,3 +21,4 @@ export function GenerateMarker(p: MapItem) : mapboxgl.Marker {
         )
   return marker;
 }
+

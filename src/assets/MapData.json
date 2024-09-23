@@ -1247,16 +1247,34 @@
   },
   {
     "kind": "3D_Shape",
-    "title": "",
+    "title": "OXY",
     "id":"3d_1",
-    "year":1750,
+    "year":1800,
     "alt_text":"building",
     "three_d_model_props": {
+      "id":"scene_1_model_1",
       "model_slug":"/assets/3d/Log.fbx",
       "lat": 34.1274,
       "long": -118.2105,
       "rotation":180,
-      "scale":10
+      "scale":1,
+      "year":1800
+    }
+  },
+  {
+    "kind": "3D_Shape",
+    "title": "CALTECH",
+    "id":"3d_2",
+    "year":1700,
+    "alt_text":"building",
+    "three_d_model_props": {
+      "id":"scene_1_model_2",
+      "model_slug":"/assets/3d/Log-2.fbx",
+      "lat": 34.1377,
+      "long": -118.1253,
+      "rotation":180,
+      "scale":1,
+      "year":1700
     }
   }
 ]
