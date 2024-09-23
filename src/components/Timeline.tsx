@@ -6,6 +6,7 @@ import {setYear} from "../store/timeline"
 
 interface TimelineProps {
   year: number;
+  classes: string;
 }
 
 export default function Timeline(props: TimelineProps) {
@@ -20,6 +21,7 @@ export default function Timeline(props: TimelineProps) {
     return a;
 }
   function handleDrag(e: React.DragEvent) {
+    ghostbuster(e);
     let TIMELINE_START_X = thumbRef?.current?.getBoundingClientRect().x;
     let TIMELINE_WIDTH = thumbRef?.current?.getBoundingClientRect().width;
     if (TIMELINE_START_X === undefined || TIMELINE_WIDTH === undefined) {
@@ -33,9 +35,9 @@ export default function Timeline(props: TimelineProps) {
   }
 
   function ghostbuster(e: React.DragEvent) {
-    const transparentImg = new Image();
-    transparentImg.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAgAB/3PCrfUAAAAASUVORK5CYII=";
-    e.dataTransfer.setDragImage(transparentImg, 0, 0)
+    var img = document.createElement("img");
+    img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=';
+    e.dataTransfer.setDragImage(img, 0, 0)
   }
   useEffect(() => {
     setTYear(new_year);
@@ -44,12 +46,12 @@ export default function Timeline(props: TimelineProps) {
 
   },[tyear])
   return (
-    <div className="timeline-wrapper full-center">
+    <div className={"timeline-wrapper full-center " + props.classes} >
       <span className="start_year">1590</span>
       <div className="slider" style={{width:"90%", height:"1.5em", background: "white", borderRadius:"10em", margin: "1em", position:"relative", padding:0, marginTop:"2em"}} ref={thumbRef}>
-        <div className="thumb"  style={{left: String(scale(tyear, MIN_YEAR, MAX_YEAR, 0, 100)) + "%", transition:"0s", position:"relative"}} onDrag={(e) => handleDrag(e)} >
+        <div className="thumb"  style={{left: String(scale(tyear, MIN_YEAR, MAX_YEAR, 0, 100)) + "%", transition:"0s", position:"relative"}} onDrag={(e) => handleDrag(e)} onDragStart={(e) => {ghostbuster(e)}} draggable={true}>
         <img src={TimelineIcon} style={{background:"transparent", cursor:"none"}} onMouseDown={() => {return false}}/>
-          <span style={{position:"absolute", transform:"translate(-50%, 0)"}}>{Math.floor(tyear)}</span>
+          <span style={{position:"absolute", transform:"translate(-139%, 10px)", cursor:"none"}}>{Math.floor(tyear)}</span>
         </div>
       </div>
       <span className="start_year">2024</span>
