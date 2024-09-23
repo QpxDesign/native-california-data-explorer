@@ -9,7 +9,6 @@ import { MapItem } from "../structs/MapItem";
 import { GenerateMarker } from "./map/marker";
 import { GetGemoetryFromFile } from "./map/shape";
 import { FeatureCollection, Geometry, GeoJsonProperties } from "geojson";
-import { Polygon } from "react-native-maps";
 import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
 import { Generate3DModel } from "./map/three-d";
