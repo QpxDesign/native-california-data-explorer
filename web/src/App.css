@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.full-center {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.map-container {
+  min-width:30em;
+  min-height:50vh;
+  flex: 3;
+}
+.info-container {
+  padding:2vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  min-width:30em;
+  flex: 1;
+  color: #f4f4f5;
+  position: relative;
+  font-family: source-serif-pro, sans-serif;
+  background-color: #020617;
+  max-height: 100vh;
+  height: 98vh;
+  overflow-x: hidden
+}
+
+.info-container h1 {
+  font-size: 3rem;
+  padding: .5em;
+  padding-bottom:.25em;
+  margin:0;
+}
+.info-container h2 {
+  margin:0;
+  font-size: 1.5rem;
+  font-weight:100;
+  padding: .5em;
+  padding-top:0;
+}
+
+.timeline-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  bottom:0;
+  margin-bottom: 1em;
+  margin-top:3.5em;
+
+}
+.thumb {
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 3.5em;
+  height: 3.5em;
+  bottom:3em;
+}
+.mapboxgl-marker {
+  height: 5em;
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(50deg) brightness(101%) contrast(102%);
+}
+.map-only-timeline {
+  display: none;
+}
+.map-only-timeline-wrapper {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .map-container {
+    height:85vh;
+  }
+  .info-container {
+    display: none
+  }
+  .map-only-timeline {
+    display: flex;
+    background: #020617;
+    padding:0;
+    color: white;
+    margin:0 auto;
+    width: 75%;
+    height:15vh;
+  }
+  .map-only-timeline-wrapper {
+    display: flex;
+    width:100%;
+    height:15vh;
+    background: #020617;
+
+  }
+}
+.scroll-progress  {
+  width:10em;
+  height:2.5em;
+  border: 2px white solid;
+  border-radius:2em;
+  z-index:1000;
+  margin:0;
+  left: 0;
+  bottom:0;
+  padding:0;
+  position: relative
+}
+.mask {
+  content: "";
+  background:red;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  right:0;
+  top:0;
+  width:50%;
+  height:100%;
+  border-radius:2em;
+  transition:1s;
+}

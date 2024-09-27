@@ -1,0 +1,1280 @@
+[
+   {
+   "kind": "point",
+   "id": "mission-1",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Francisco Solano",
+   "lat": 38.29388889,
+   "long": -122.4555556,
+   "year": 1823
+ },
+ {
+   "kind": "point",
+   "id":"mission-2",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Rafael Arcángel",
+   "lat": 37.97416667,
+   "long": -122.5277778,
+   "year": 1817
+ },
+ {
+   "kind": "point",
+   "id": "mission-3",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Francisco de Asís",
+   "lat": 37.76416667,
+   "long": -122.4269444,
+   "year": 1776
+ },
+ {
+   "kind": "point",
+   "id": "mission-4",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San José",
+   "lat": 37.53277778,
+   "long": -121.9194444,
+   "year": 1797
+ },
+ {
+   "kind": "point",
+   "id": "mission-5",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission Santa Clara de Asís",
+   "lat": 37.34916667,
+   "long": -121.9413889,
+   "year": 1777
+ },
+ {
+   "kind": "point",
+   "id": "mission-6",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission Santa Cruz",
+   "lat": 36.97805556,
+   "long": -122.0291667,
+   "year": 1777
+ },
+ {
+   "kind": "point",
+   "id": "mission-7",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Juan Bautista",
+   "lat": 36.845,
+   "long": -121.5358333,
+   "year": 1797
+ },
+ {
+   "kind": "point",
+   "id": "mission-8",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Carlos Borromeo de Carmelo",
+   "lat": 36.5425,
+   "long": -121.9197222,
+   "year": 1770
+ },
+ {
+   "kind": "point",
+   "id": "mission-9",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission Nuestra Señora de la Soledad",
+   "lat": 36.40444444,
+   "long": -121.3555556,
+   "year": 1791
+ },
+ {
+   "kind": "point",
+   "id": "mission-10",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Antonio de Padua",
+   "lat": 36.015,
+   "long": -121.25,
+   "year": 1771
+ },
+ {
+   "kind": "point",
+   "id": "mission-11",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Miguel Arcángel",
+   "lat": 35.74472222,
+   "long": -120.6980556,
+   "year": 1821
+ },
+ {
+   "kind": "point",
+   "id": "mission-12",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Luis Obispo de Tolosa",
+   "lat": 35.28055556,
+   "long": -120.6644444,
+   "year": 1772
+ },
+ {
+   "kind": "point",
+   "id": "mission-13",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission La Purísima Concepción",
+   "lat": 34.67027778,
+   "long": -120.4205556,
+   "year": 1787
+ },
+ {
+   "kind": "point",
+   "id": "mission-14",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission Santa Inés",
+   "lat": 34.59444444,
+   "long": -120.1363889,
+   "year": 1804
+ },
+ {
+   "kind": "point",
+   "id": "mission-15",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission Santa Barbara",
+   "lat": 34.43833333,
+   "long": -119.7138889,
+   "year": 1820
+ },
+ {
+   "kind": "point",
+   "id": "mission-16",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Buenaventura",
+   "lat": 34.28111111,
+   "long": -119.2980556,
+   "year": 1782
+ },
+ {
+   "kind": "point",
+   "id": "mission-17",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Fernando Rey de España",
+   "lat": 34.27305556,
+   "long": -118.4611111,
+   "year": 1797
+ },
+ {
+   "kind": "point",
+   "id": "mission-18",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Gabriel",
+   "lat": 34.09722222,
+   "long": -118.1061111,
+   "year": 1771
+ },
+ {
+   "kind": "point",
+   "id": "mission-19",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Juan Capistrano",
+   "lat": 33.50277778,
+   "long": -117.6627778,
+   "year": 1776
+ },
+ {
+   "kind": "point",
+   "id": "mission-20",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Luis Rey de Francia",
+   "lat": 33.2325,
+   "long": -117.32,
+   "year": 1798
+ },
+ {
+   "kind": "point",
+   "id": "mission-21",
+   "icon_slug": "https://www.svgrepo.com/show/20462/church.svg",
+   "alt_text": "Mission Icon",
+   "title": "Mission San Diego de Alcalá",
+   "lat": 32.78444444,
+   "long": -117.1063889,
+   "year": 1769
+ },
+  {
+    "kind": "shape",
+    "title": "Agua Caliente Indian Reservation",
+    "id": "shape_0",
+    "alt_text": "Agua Caliente Indian Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_0-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Agua Caliente Indian Reservation",
+    "id": "shape_1",
+    "alt_text": "Agua Caliente Indian Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_1-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Alturas Indian Rancheria",
+    "id": "shape_2",
+    "alt_text": "Alturas Indian Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_2-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Auburn Rancheria",
+    "id": "shape_3",
+    "alt_text": "Auburn Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_3-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Auburn Rancheria",
+    "id": "shape_4",
+    "alt_text": "Auburn Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_4-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Augustine Reservation",
+    "id": "shape_5",
+    "alt_text": "Augustine Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_5-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Barona Reservation",
+    "id": "shape_6",
+    "alt_text": "Barona Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_6-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Barona Reservation",
+    "id": "shape_7",
+    "alt_text": "Barona Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_7-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Benton Paiute Reservation",
+    "id": "shape_8",
+    "alt_text": "Benton Paiute Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_8-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Benton Paiute Reservation",
+    "id": "shape_9",
+    "alt_text": "Benton Paiute Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_9-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Berry Creek Rancheria",
+    "id": "shape_10",
+    "alt_text": "Berry Creek Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_10-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Berry Creek Rancheria",
+    "id": "shape_11",
+    "alt_text": "Berry Creek Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_11-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Bend Rancheria",
+    "id": "shape_12",
+    "alt_text": "Big Bend Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_12-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Lagoon Rancheria",
+    "id": "shape_13",
+    "alt_text": "Big Lagoon Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_13-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Pine Reservation",
+    "id": "shape_14",
+    "alt_text": "Big Pine Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_14-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Pine Reservation",
+    "id": "shape_15",
+    "alt_text": "Big Pine Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_15-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Sandy Rancheria",
+    "id": "shape_16",
+    "alt_text": "Big Sandy Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_16-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Sandy Rancheria",
+    "id": "shape_17",
+    "alt_text": "Big Sandy Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_17-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Big Valley Rancheria",
+    "id": "shape_18",
+    "alt_text": "Big Valley Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_18-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Bishop Reservation",
+    "id": "shape_19",
+    "alt_text": "Bishop Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_19-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Blue Lake Rancheria",
+    "id": "shape_20",
+    "alt_text": "Blue Lake Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_20-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Blue Lake Rancheria",
+    "id": "shape_21",
+    "alt_text": "Blue Lake Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_21-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Bridgeport Reservation",
+    "id": "shape_22",
+    "alt_text": "Bridgeport Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_22-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Bridgeport Reservation",
+    "id": "shape_23",
+    "alt_text": "Bridgeport Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_23-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Cabazon Reservation",
+    "id": "shape_24",
+    "alt_text": "Cabazon Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_24-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Cahuilla Reservation",
+    "id": "shape_25",
+    "alt_text": "Cahuilla Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_25-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Campo Indian Reservation",
+    "id": "shape_26",
+    "alt_text": "Campo Indian Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_26-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Capitan Grande Reservation",
+    "id": "shape_27",
+    "alt_text": "Capitan Grande Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_27-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Cedarville Rancheria",
+    "id": "shape_28",
+    "alt_text": "Cedarville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_28-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Cedarville Rancheria",
+    "id": "shape_29",
+    "alt_text": "Cedarville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_29-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Chemehuevi Reservation",
+    "id": "shape_30",
+    "alt_text": "Chemehuevi Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_30-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Chicken Ranch Rancheria",
+    "id": "shape_31",
+    "alt_text": "Chicken Ranch Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_31-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Chicken Ranch Rancheria",
+    "id": "shape_32",
+    "alt_text": "Chicken Ranch Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_32-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Cold Springs Rancheria",
+    "id": "shape_33",
+    "alt_text": "Cold Springs Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_33-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Colorado River Indian Reservation",
+    "id": "shape_34",
+    "alt_text": "Colorado River Indian Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_34-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Colusa Rancheria",
+    "id": "shape_35",
+    "alt_text": "Colusa Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_35-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Cortina Indian Rancheria",
+    "id": "shape_36",
+    "alt_text": "Cortina Indian Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_36-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Coyote Valley Reservation",
+    "id": "shape_37",
+    "alt_text": "Coyote Valley Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_37-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Dry Creek Rancheria",
+    "id": "shape_38",
+    "alt_text": "Dry Creek Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_38-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Dry Creek Rancheria",
+    "id": "shape_39",
+    "alt_text": "Dry Creek Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_39-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Elk Valley Rancheria",
+    "id": "shape_40",
+    "alt_text": "Elk Valley Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_40-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Elk Valley Rancheria",
+    "id": "shape_41",
+    "alt_text": "Elk Valley Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_41-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Enterprise Rancheria",
+    "id": "shape_42",
+    "alt_text": "Enterprise Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_42-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Enterprise Rancheria",
+    "id": "shape_43",
+    "alt_text": "Enterprise Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_43-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Ewiiaapaayp Reservation",
+    "id": "shape_44",
+    "alt_text": "Ewiiaapaayp Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_44-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Fort Bidwell Reservation",
+    "id": "shape_45",
+    "alt_text": "Fort Bidwell Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_45-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Fort Bidwell Reservation",
+    "id": "shape_46",
+    "alt_text": "Fort Bidwell Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_46-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Fort Independence Reservation",
+    "id": "shape_47",
+    "alt_text": "Fort Independence Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_47-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Fort Mojave Reservation",
+    "id": "shape_48",
+    "alt_text": "Fort Mojave Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_48-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Fort Mojave Reservation",
+    "id": "shape_49",
+    "alt_text": "Fort Mojave Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_49-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Fort Yuma Indian Reservation",
+    "id": "shape_50",
+    "alt_text": "Fort Yuma Indian Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_50-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Greenville Rancheria",
+    "id": "shape_51",
+    "alt_text": "Greenville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_51-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Grindstone Indian Rancheria",
+    "id": "shape_52",
+    "alt_text": "Grindstone Indian Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_52-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Guidiville Rancheria",
+    "id": "shape_53",
+    "alt_text": "Guidiville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_53-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Guidiville Rancheria",
+    "id": "shape_54",
+    "alt_text": "Guidiville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_54-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Hoopa Valley Reservation",
+    "id": "shape_55",
+    "alt_text": "Hoopa Valley Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_55-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Hopland Rancheria",
+    "id": "shape_56",
+    "alt_text": "Hopland Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_56-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Inaja and Cosmit Reservation",
+    "id": "shape_57",
+    "alt_text": "Inaja and Cosmit Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_57-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Jackson Rancheria",
+    "id": "shape_58",
+    "alt_text": "Jackson Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_58-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Jamul Indian Village",
+    "id": "shape_59",
+    "alt_text": "Jamul Indian Village",
+    "shape_file_slug": "/assets/shapefiles/shape_59-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Karuk Reservation",
+    "id": "shape_60",
+    "alt_text": "Karuk Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_60-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Karuk Reservation",
+    "id": "shape_61",
+    "alt_text": "Karuk Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_61-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "La Jolla Reservation",
+    "id": "shape_62",
+    "alt_text": "La Jolla Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_62-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "La Posta Indian Reservation",
+    "id": "shape_63",
+    "alt_text": "La Posta Indian Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_63-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Laytonville Rancheria",
+    "id": "shape_64",
+    "alt_text": "Laytonville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_64-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Likely Rancheria",
+    "id": "shape_65",
+    "alt_text": "Likely Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_65-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Lone Pine Reservation",
+    "id": "shape_66",
+    "alt_text": "Lone Pine Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_66-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Lookout Rancheria",
+    "id": "shape_67",
+    "alt_text": "Lookout Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_67-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Los Coyotes Reservation",
+    "id": "shape_68",
+    "alt_text": "Los Coyotes Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_68-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Lytton Rancheria",
+    "id": "shape_69",
+    "alt_text": "Lytton Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_69-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Manchester-Point Arena Rancheria",
+    "id": "shape_70",
+    "alt_text": "Manchester-Point Arena Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_70-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Manzanita Reservation",
+    "id": "shape_71",
+    "alt_text": "Manzanita Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_71-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Manzanita Reservation",
+    "id": "shape_72",
+    "alt_text": "Manzanita Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_72-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Mesa Grande Reservation",
+    "id": "shape_73",
+    "alt_text": "Mesa Grande Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_73-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Middletown Rancheria",
+    "id": "shape_74",
+    "alt_text": "Middletown Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_74-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Montgomery Creek Rancheria",
+    "id": "shape_75",
+    "alt_text": "Montgomery Creek Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_75-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Mooretown Rancheria",
+    "id": "shape_76",
+    "alt_text": "Mooretown Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_76-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Mooretown Rancheria",
+    "id": "shape_77",
+    "alt_text": "Mooretown Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_77-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Morongo Reservation",
+    "id": "shape_78",
+    "alt_text": "Morongo Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_78-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Morongo Reservation",
+    "id": "shape_79",
+    "alt_text": "Morongo Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_79-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "North Fork Rancheria",
+    "id": "shape_80",
+    "alt_text": "North Fork Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_80-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "North Fork Rancheria",
+    "id": "shape_81",
+    "alt_text": "North Fork Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_81-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Pala Reservation",
+    "id": "shape_82",
+    "alt_text": "Pala Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_82-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Paskenta Rancheria",
+    "id": "shape_83",
+    "alt_text": "Paskenta Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_83-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Pauma and Yuima Reservation",
+    "id": "shape_84",
+    "alt_text": "Pauma and Yuima Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_84-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Pechanga Reservation",
+    "id": "shape_85",
+    "alt_text": "Pechanga Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_85-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Picayune Rancheria",
+    "id": "shape_86",
+    "alt_text": "Picayune Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_86-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Picayune Rancheria",
+    "id": "shape_87",
+    "alt_text": "Picayune Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_87-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Pinoleville Rancheria",
+    "id": "shape_88",
+    "alt_text": "Pinoleville Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_88-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Pit River Trust Land",
+    "id": "shape_89",
+    "alt_text": "Pit River Trust Land",
+    "shape_file_slug": "/assets/shapefiles/shape_89-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Quartz Valley Reservation",
+    "id": "shape_90",
+    "alt_text": "Quartz Valley Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_90-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Quartz Valley Reservation",
+    "id": "shape_91",
+    "alt_text": "Quartz Valley Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_91-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Ramona Village",
+    "id": "shape_92",
+    "alt_text": "Ramona Village",
+    "shape_file_slug": "/assets/shapefiles/shape_92-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Redding Rancheria",
+    "id": "shape_93",
+    "alt_text": "Redding Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_93-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Redwood Valley Rancheria",
+    "id": "shape_94",
+    "alt_text": "Redwood Valley Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_94-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Resighini Rancheria",
+    "id": "shape_95",
+    "alt_text": "Resighini Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_95-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Rincon Reservation",
+    "id": "shape_96",
+    "alt_text": "Rincon Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_96-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Rincon Reservation",
+    "id": "shape_97",
+    "alt_text": "Rincon Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_97-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Roaring Creek Rancheria",
+    "id": "shape_98",
+    "alt_text": "Roaring Creek Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_98-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Robinson Rancheria",
+    "id": "shape_99",
+    "alt_text": "Robinson Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_99-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Robinson Rancheria",
+    "id": "shape_100",
+    "alt_text": "Robinson Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_100-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Rohnerville (Rancheria) Trust Land",
+    "id": "shape_101",
+    "alt_text": "Rohnerville (Rancheria) Trust Land",
+    "shape_file_slug": "/assets/shapefiles/shape_101-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Round Valley Reservation",
+    "id": "shape_102",
+    "alt_text": "Round Valley Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_102-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Round Valley Reservation",
+    "id": "shape_103",
+    "alt_text": "Round Valley Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_103-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Rumsey Indian Rancheria",
+    "id": "shape_104",
+    "alt_text": "Rumsey Indian Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_104-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "San Manuel Reservation",
+    "id": "shape_105",
+    "alt_text": "San Manuel Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_105-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "San Manuel Reservation",
+    "id": "shape_106",
+    "alt_text": "San Manuel Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_106-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "San Pasqual Reservation",
+    "id": "shape_107",
+    "alt_text": "San Pasqual Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_107-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "San Pasqual Reservation",
+    "id": "shape_108",
+    "alt_text": "San Pasqual Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_108-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Santa Rosa Rancheria",
+    "id": "shape_109",
+    "alt_text": "Santa Rosa Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_109-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Santa Rosa Reservation",
+    "id": "shape_110",
+    "alt_text": "Santa Rosa Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_110-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Santa Ynez Reservation",
+    "id": "shape_111",
+    "alt_text": "Santa Ynez Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_111-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Santa Ysabel Reservation",
+    "id": "shape_112",
+    "alt_text": "Santa Ysabel Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_112-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Sherwood Valley Rancheria",
+    "id": "shape_113",
+    "alt_text": "Sherwood Valley Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_113-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Sherwood Valley Rancheria",
+    "id": "shape_114",
+    "alt_text": "Sherwood Valley Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_114-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Shingle Springs Rancheria",
+    "id": "shape_115",
+    "alt_text": "Shingle Springs Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_115-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Shingle Springs Rancheria",
+    "id": "shape_116",
+    "alt_text": "Shingle Springs Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_116-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Smith River Rancheria",
+    "id": "shape_117",
+    "alt_text": "Smith River Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_117-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Smith River Rancheria",
+    "id": "shape_118",
+    "alt_text": "Smith River Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_118-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Soboba Reservation",
+    "id": "shape_119",
+    "alt_text": "Soboba Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_119-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Soboba Reservation",
+    "id": "shape_120",
+    "alt_text": "Soboba Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_120-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Stewarts Point Rancheria",
+    "id": "shape_121",
+    "alt_text": "Stewarts Point Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_121-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Stewarts Point Rancheria",
+    "id": "shape_122",
+    "alt_text": "Stewarts Point Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_122-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Sulphur Bank Rancheria",
+    "id": "shape_123",
+    "alt_text": "Sulphur Bank Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_123-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Susanville Indian Rancheria",
+    "id": "shape_124",
+    "alt_text": "Susanville Indian Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_124-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Susanville Indian Rancheria",
+    "id": "shape_125",
+    "alt_text": "Susanville Indian Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_125-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Sycuan Reservation",
+    "id": "shape_126",
+    "alt_text": "Sycuan Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_126-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Sycuan Reservation",
+    "id": "shape_127",
+    "alt_text": "Sycuan Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_127-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Table Bluff Reservation",
+    "id": "shape_128",
+    "alt_text": "Table Bluff Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_128-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Table Mountain Rancheria",
+    "id": "shape_129",
+    "alt_text": "Table Mountain Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_129-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Table Mountain Rancheria",
+    "id": "shape_130",
+    "alt_text": "Table Mountain Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_130-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Timbi-Sha Shoshone Reservation",
+    "id": "shape_131",
+    "alt_text": "Timbi-Sha Shoshone Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_131-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Timbi-Sha Shoshone Reservation",
+    "id": "shape_132",
+    "alt_text": "Timbi-Sha Shoshone Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_132-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Torres-Martinez Reservation",
+    "id": "shape_133",
+    "alt_text": "Torres-Martinez Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_133-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Trinidad Rancheria",
+    "id": "shape_134",
+    "alt_text": "Trinidad Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_134-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Trinidad Rancheria",
+    "id": "shape_135",
+    "alt_text": "Trinidad Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_135-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Tule River Reservation",
+    "id": "shape_136",
+    "alt_text": "Tule River Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_136-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Tule River Reservation",
+    "id": "shape_137",
+    "alt_text": "Tule River Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_137-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Tuolumne Rancheria",
+    "id": "shape_138",
+    "alt_text": "Tuolumne Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_138-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Twenty-Nine Palms Reservation",
+    "id": "shape_139",
+    "alt_text": "Twenty-Nine Palms Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_139-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Twenty-Nine Palms Reservation",
+    "id": "shape_140",
+    "alt_text": "Twenty-Nine Palms Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_140-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Upper Lake Rancheria",
+    "id": "shape_141",
+    "alt_text": "Upper Lake Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_141-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Viejas Reservation",
+    "id": "shape_142",
+    "alt_text": "Viejas Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_142-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Viejas Reservation",
+    "id": "shape_143",
+    "alt_text": "Viejas Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_143-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Washoe Ranches Trust Land",
+    "id": "shape_144",
+    "alt_text": "Washoe Ranches Trust Land",
+    "shape_file_slug": "/assets/shapefiles/shape_144-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Woodfords Community",
+    "id": "shape_145",
+    "alt_text": "Woodfords Community",
+    "shape_file_slug": "/assets/shapefiles/shape_145-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "XL Ranch Rancheria",
+    "id": "shape_146",
+    "alt_text": "XL Ranch Rancheria",
+    "shape_file_slug": "/assets/shapefiles/shape_146-geometry.json"
+  },
+  {
+    "kind": "shape",
+    "title": "Yurok Reservation",
+    "id": "shape_147",
+    "alt_text": "Yurok Reservation",
+    "shape_file_slug": "/assets/shapefiles/shape_147-geometry.json"
+  },
+  {
+    "kind": "3D_Shape",
+    "title": "OXY",
+    "id":"3d_1",
+    "year":1800,
+    "alt_text":"building",
+    "three_d_model_props": {
+      "id":"scene_1_model_1",
+      "model_slug":"/assets/3d/Log.fbx",
+      "lat": 34.1274,
+      "long": -118.2105,
+      "rotation":180,
+      "scale":1,
+      "year":1800
+    }
+  },
+  {
+    "kind": "3D_Shape",
+    "title": "CALTECH",
+    "id":"3d_2",
+    "year":1700,
+    "alt_text":"building",
+    "three_d_model_props": {
+      "id":"scene_1_model_2",
+      "model_slug":"/assets/3d/cottage.fbx",
+      "lat": 34.1377,
+      "long": -118.1253,
+      "rotation":180,
+      "scale":1,
+      "year":1700
+    }
+  }
+]
