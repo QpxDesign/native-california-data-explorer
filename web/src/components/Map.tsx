@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import mapboxgl, { GeoJSONSource } from "mapbox-gl";
+import mapboxgl, { GeoJSONSource, MapMouseEvent } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useSelector, useDispatch } from "react-redux";
 import { navigateTo } from "../store/map";
@@ -13,6 +13,7 @@ import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
 import { Generate3DModel } from "./map/three-d";
 import {StyleMap} from "./map/StyleMap"
+import { ShapePopup} from "./map/Popup"
 // @ts-ignore
 import { Threebox } from "threebox-plugin";
 
@@ -131,6 +132,7 @@ export default function Map() {
           'line-width': 2
         }
       })
+      console.log(map.current?.getLayer("ranches-layer"))
       map?.current?.on('mouseenter', 'ranches-layer', () => {
         if (map === null || map.current === null) return;
         map.current.getCanvas().style.cursor = 'pointer';
@@ -140,14 +142,9 @@ export default function Map() {
         if (map === null || map.current === null) return;
         map.current.getCanvas().style.cursor = '';
       });
-      map?.current?.on('click', 'ranches-layer', (e) => {
-        if (map.current === null) return; // JSON.stringify(JSON.parse(JSON.stringify(e.features[0])).properties).Name
-        if (e.features === undefined || e.features.length === 0) return;
-        console.log(JSON.stringify(e.features[0]))
-        let po = new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties?.Name ?? "WHOOP")
-          .addTo(map.current)
+        map?.current?.on('click', 'ranches-layer', (e : MapMouseEvent) => {
+          ShapePopup(map, e)
+
         });
     }
     })
