@@ -26,6 +26,7 @@ export default function Map() {
   const tyear = useSelector((state: RootState) => state.timeline.value);
   const [year, setYear] = useState(1590);
   const [markers, setMarkers] = useState<Array<Marker>>([]);
+  const [shapes, setShapes] = useState<Array<MapItem>>([])
   const [models, setModels] = useState<Array<MapItem>>([])
   const [fireda, setFireda] = useState<Boolean>(false);
   const [firedb, setFiredb] = useState<Boolean>(false);
@@ -88,22 +89,6 @@ export default function Map() {
     map.current.addControl(new mapboxgl.NavigationControl());
   });
   useEffect(() => {
-    if (!map.current?.loaded()) return;
-    MapData.forEach((md) => {
-    if (md.three_d_model_props === undefined) {
-        return;
-      }
-    if((md.year ?? 10000) < year) {
-        map.current?.setLayoutProperty(md.three_d_model_props?.id, "visibility","visible")
-        console.log("SHOWN - " + md.three_d_model_props?.id)
-    }
-    if((md.year ?? 0) > year) {
-      //map.current?.setLayoutProperty(md.three_d_model_props?.id, "visibility","none")
-     // console.log("HIDDEN - " + md.three_d_model_props?.id)
-    }
-    })
-  }, [year])
-  useEffect(() => {
     if (!fireda && map.current?.loaded() && map.current !== null) {
       console.log("ADDED")
       setFireda(true)
@@ -119,12 +104,63 @@ export default function Map() {
         }
                });
     }
+
+    map?.current?.on('load', () => {
+    if (map?.current?.getLayer("ranches-layer") === undefined) {
+      map?.current?.addSource('ranches', {
+        type: 'geojson',
+        data: '/assets/ranches.json'
+      });
+      map?.current?.addLayer({
+        id: "ranches-layer",
+        type: 'fill',
+        source: "ranches",
+        layout: {},
+        paint: {
+          'fill-color': '#fdba74',
+          'fill-opacity': 0.33,
+        }
+      });
+      map.current?.addLayer({
+        id: 'outline',
+        type: 'line',
+        source: 'ranches',
+        layout: {},
+        paint: {
+          'line-color': '#9a3412',
+          'line-width': 2
+        }
+      })
+      map?.current?.on('mouseenter', 'ranches-layer', () => {
+        if (map === null || map.current === null) return;
+        map.current.getCanvas().style.cursor = 'pointer';
+      });
+
+      map?.current?.on('mouseleave', 'ranches-layer', () => {
+        if (map === null || map.current === null) return;
+        map.current.getCanvas().style.cursor = '';
+      });
+      map?.current?.on('click', 'ranches-layer', (e) => {
+        if (map.current === null) return; // JSON.stringify(JSON.parse(JSON.stringify(e.features[0])).properties).Name
+        if (e.features === undefined || e.features.length === 0) return;
+        console.log(JSON.stringify(e.features[0]))
+        let po = new mapboxgl.Popup()
+          .setLngLat(e.lngLat)
+          .setHTML(e.features[0].properties?.Name ?? "WHOOP")
+          .addTo(map.current)
+        });
+    }
+    })
        })
   useEffect(() => {
+    if (map === null || map.current === null) return;
+    if (!map.current?.loaded()) return;
     MapData.forEach((md) => {
+      if (!map.current?.loaded()) return;
+      if (map === null || map.current === null) return;
+      // && (md?.year ?? 100000) < year
       if (md.kind !== "point") return;
       if (markers.find((m) => m.id === md.id) === undefined && (md?.year ?? 100000) < year) {
-        if (map === null || map.current === null) return;
         let m = GenerateMarker(md);
         m.addTo(map.current)
         setMarkers(markers => [...markers, {id: md.id, marker: m}])
