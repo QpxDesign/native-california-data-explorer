@@ -38,9 +38,11 @@ for entry in tqdm(metadata):
             continue;
 
 out_pg = []
+
 for pg in polygons["features"]:
-    if "q_id" in pg["properties"]:
-        out_pg.append(pg)
+    if "q_id" not in pg["properties"]:
+        pg["properties"]["q_id"] = "none"
+    out_pg.append(pg)
 
 f1 = open("out/RANCHES_WITH_QID.json","w")
 f2 = open("out/METADATA_WITH_QID.json","w")

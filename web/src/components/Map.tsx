@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import mapboxgl, { GeoJSONSource, MapMouseEvent } from "mapbox-gl";
+import mapboxgl, { GeoJSONSource, MapEvent, MapMouseEvent } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useSelector, useDispatch } from "react-redux";
 import { navigateTo } from "../store/map";
@@ -12,23 +12,23 @@ import { FeatureCollection, Geometry, GeoJsonProperties } from "geojson";
 import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
 import { Generate3DModel } from "./map/three-d";
-import {StyleMap} from "./map/StyleMap"
-import { ShapePopup} from "./map/Popup"
+import { StyleMap } from "./map/StyleMap";
+import { ShapePopup } from "./map/Popup";
 // @ts-ignore
 import { Threebox } from "threebox-plugin";
 
 type Marker = {
-  id: string,
-  marker: mapboxgl.Marker
-}
+  id: string;
+  marker: mapboxgl.Marker;
+};
 
 export default function Map() {
   const map_pos = useSelector((state: RootState) => state.map.value);
   const tyear = useSelector((state: RootState) => state.timeline.value);
   const [year, setYear] = useState(1590);
   const [markers, setMarkers] = useState<Array<Marker>>([]);
-  const [shapes, setShapes] = useState<Array<MapItem>>([])
-  const [models, setModels] = useState<Array<MapItem>>([])
+  const [shapes, setShapes] = useState<Array<MapItem>>([]);
+  const [models, setModels] = useState<Array<MapItem>>([]);
   const [fireda, setFireda] = useState<Boolean>(false);
   const [firedb, setFiredb] = useState<Boolean>(false);
 
@@ -40,7 +40,7 @@ export default function Map() {
   const map = useRef<mapboxgl.Map | null>(null);
   useEffect(() => {
     setYear(tyear);
-  },[tyear])
+  }, [tyear]);
 
   useEffect(() => {
     console.log(map_pos);
@@ -75,7 +75,6 @@ export default function Map() {
       style: "mapbox://styles/mapbox/outdoors-v12",
       center: [DEFAULT_MAP_LOCATION[1], DEFAULT_MAP_LOCATION[0]], //
       zoom: DEFAULT_MAP_LOCATION[2],
-
     });
     map.current.addControl(
       new mapboxgl.GeolocateControl({
@@ -86,69 +85,81 @@ export default function Map() {
         showUserHeading: true,
       })
     );
-    StyleMap(map)
+    StyleMap(map);
     map.current.addControl(new mapboxgl.NavigationControl());
   });
   useEffect(() => {
     if (!fireda && map.current?.loaded() && map.current !== null) {
-      console.log("ADDED")
-      setFireda(true)
-       MapData.forEach((md) => {
+      console.log("ADDED");
+      setFireda(true);
+      MapData.forEach((md) => {
         if (md.three_d_model_props !== undefined && map.current !== null) {
           let a = new Threebox(
-        map.current,
-        map.current.getCanvas().getContext("webgl"),
-        { defaultLights: true },
-      );
-            map.current?.addLayer(Generate3DModel(map, md.three_d_model_props, md.year, a));
-            map.current?.setLayoutProperty(md.three_d_model_props?.id, "visibility","none")
+            map.current,
+            map.current.getCanvas().getContext("webgl"),
+            { defaultLights: true }
+          );
+          map.current?.addLayer(
+            Generate3DModel(map, md.three_d_model_props, md.year, a)
+          );
+          map.current?.setLayoutProperty(
+            md.three_d_model_props?.id,
+            "visibility",
+            "none"
+          );
         }
-               });
+      });
     }
 
-    map?.current?.on('load', () => {
-    if (map?.current?.getLayer("ranches-layer") === undefined) {
-      map?.current?.addSource('ranches', {
-        type: 'geojson',
-        data: '/assets/ranches.json'
-      });
-      map?.current?.addLayer({
-        id: "ranches-layer",
-        type: 'fill',
-        source: "ranches",
-        layout: {},
-        paint: {
-          'fill-color': '#fdba74',
-          'fill-opacity': 0.33,
-        }
-      });
-      map.current?.addLayer({
-        id: 'outline',
-        type: 'line',
-        source: 'ranches',
-        layout: {},
-        paint: {
-          'line-color': '#9a3412',
-          'line-width': 2
-        }
-      })
-      console.log(map.current?.getLayer("ranches-layer"))
-      map?.current?.on('mouseenter', 'ranches-layer', () => {
-        if (map === null || map.current === null) return;
-        map.current.getCanvas().style.cursor = 'pointer';
-      });
-
-      map?.current?.on('mouseleave', 'ranches-layer', () => {
-        if (map === null || map.current === null) return;
-        map.current.getCanvas().style.cursor = '';
-      });
-        map?.current?.on('click', 'ranches-layer', (e : MapMouseEvent) => {
-          ShapePopup(map, e)
-
+    map?.current?.on("load", () => {
+      if (map?.current?.getLayer("ranches-layer") === undefined) {
+        map?.current?.addSource("ranches", {
+          type: "geojson",
+          data: "/assets/ranches-old.json",
         });
-    }
-    })
-       })
+        map?.current?.addLayer({
+          id: "ranches-layer",
+          type: "fill",
+          source: "ranches",
+          layout: {},
+          paint: {
+            "fill-color": "#fdba74",
+            "fill-opacity": 0.50,
+          },
+        });
+        map.current?.addLayer({
+          id: "outline",
+          type: "line",
+          source: "ranches",
+          layout: {},
+          paint: {
+            "line-color": "#000", // #9a3412
+            "line-width": 1,
+          },
+        });
+        console.log(map.current?.getLayer("ranches-layer"));
+        map?.current?.setPaintProperty("ranches-layer", "fill-color", [
+          "match",
+          ["get", "q_id"],
+          "none",
+          "#3b82f6",
+          "#fdba74",
+        ]);
+        map?.current?.on("mouseenter", "ranches-layer", () => {
+          if (map === null || map.current === null) return;
+          map.current.getCanvas().style.cursor = "pointer";
+        });
+
+        map?.current?.on("mouseleave", "ranches-layer", () => {
+          if (map === null || map.current === null) return;
+          map.current.getCanvas().style.cursor = "";
+        });
+        map?.current?.on("click", "ranches-layer", (e: MapMouseEvent) => {
+          ShapePopup(map, e);
+        });
+      }
+    });
+  });
   useEffect(() => {
     if (map === null || map.current === null) return;
     if (!map.current?.loaded()) return;
@@ -157,22 +168,27 @@ export default function Map() {
       if (map === null || map.current === null) return;
       // && (md?.year ?? 100000) < year
       if (md.kind !== "point") return;
-      if (markers.find((m) => m.id === md.id) === undefined && (md?.year ?? 100000) < year) {
+      if (
+        markers.find((m) => m.id === md.id) === undefined &&
+        (md?.year ?? 100000) < year
+      ) {
         let m = GenerateMarker(md);
-        m.addTo(map.current)
-        setMarkers(markers => [...markers, {id: md.id, marker: m}])
+        m.addTo(map.current);
+        setMarkers((markers) => [...markers, { id: md.id, marker: m }]);
       }
-      if (markers.find((m) => m.id === md.id) !== undefined && (md?.year ?? 0) > year) {
+      if (
+        markers.find((m) => m.id === md.id) !== undefined &&
+        (md?.year ?? 0) > year
+      ) {
         markers.find((m) => m.id === md.id)?.marker.remove();
         let a = markers.find((m) => m.id === md.id);
         if (a !== undefined) {
           map.current?._removeMarker(a.marker);
         }
 
-        setMarkers(markers.filter((a) => a.id !== md.id))
+        setMarkers(markers.filter((a) => a.id !== md.id));
       }
-
-    })
-  }, [year])
+    });
+  }, [year]);
   return <div className="map-container" ref={mapContainer} />;
 }
