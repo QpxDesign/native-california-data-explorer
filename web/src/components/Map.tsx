@@ -13,7 +13,7 @@ import { ShapeGeometry } from "./map/shape";
 import Position from "mapbox-gl";
 import { Generate3DModel } from "./map/three-d";
 import { StyleMap } from "./map/StyleMap";
-import { ShapePopup } from "./map/Popup";
+import { ShapePopup, VillagePopup } from "./map/Popup";
 // @ts-ignore
 import { Threebox } from "threebox-plugin";
 
@@ -83,7 +83,7 @@ export default function Map() {
         },
         trackUserLocation: true,
         showUserHeading: true,
-      })
+      }),
     );
     StyleMap(map);
     map.current.addControl(new mapboxgl.NavigationControl());
@@ -97,15 +97,15 @@ export default function Map() {
           let a = new Threebox(
             map.current,
             map.current.getCanvas().getContext("webgl"),
-            { defaultLights: true }
+            { defaultLights: true },
           );
           map.current?.addLayer(
-            Generate3DModel(map, md.three_d_model_props, md.year, a)
+            Generate3DModel(map, md.three_d_model_props, md.year, a),
           );
           map.current?.setLayoutProperty(
             md.three_d_model_props?.id,
             "visibility",
-            "none"
+            "none",
           );
         }
       });
@@ -124,7 +124,7 @@ export default function Map() {
           layout: {},
           paint: {
             "fill-color": "#fdba74",
-            "fill-opacity": 0.50,
+            "fill-opacity": 0.5,
           },
         });
         map.current?.addLayer({
@@ -157,6 +157,40 @@ export default function Map() {
         map?.current?.on("click", "ranches-layer", (e: MapMouseEvent) => {
           ShapePopup(map, e);
         });
+      }
+    });
+    map?.current?.on("load", () => {
+      if (map?.current?.getLayer("chumash-villages-layer") === undefined) {
+        map?.current?.addSource("chumash-villages", {
+          type: "geojson",
+          data: "/assets/chumash-villages.json",
+        });
+        map?.current?.addLayer({
+          id: "chumash-villages-layer",
+          type: "circle",
+          source: "chumash-villages",
+          layout: {},
+          paint: {
+            "circle-radius": 12,
+            "circle-opacity": 0.5,
+          },
+        });
+        map?.current?.on("mouseenter", "chumash-villages-layer", () => {
+          if (map === null || map.current === null) return;
+          map.current.getCanvas().style.cursor = "pointer";
+        });
+
+        map?.current?.on("mouseleave", "chumash-villages-layer", () => {
+          if (map === null || map.current === null) return;
+          map.current.getCanvas().style.cursor = "";
+        });
+        map?.current?.on(
+          "click",
+          "chumash-villages-layer",
+          (e: MapMouseEvent) => {
+            VillagePopup(map, e);
+          },
+        );
       }
     });
   });

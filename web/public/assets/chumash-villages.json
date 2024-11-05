@@ -1,0 +1,1575 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.0744513085308, 35.5543089119987]
+      },
+      "properties": {
+        "name": "Tsitkawayu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.69130311517142, 35.60903600962736]
+      },
+      "properties": {
+        "name": "Elewexe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.8073824384609, 35.51915907054942]
+      },
+      "properties": {
+        "name": "Chimimu'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.67279991892966, 35.499037034895686]
+      },
+      "properties": {
+        "name": "Tsiskikiye"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.53409752635153, 35.532570959403216]
+      },
+      "properties": {
+        "name": "Chisqiyo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.90351280955466, 35.44535362784354]
+      },
+      "properties": {
+        "name": "Tsitxala"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.71537194041403, 35.44199722501528]
+      },
+      "properties": {
+        "name": "Spe'ele"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.61237511424216, 35.43975954537793]
+      },
+      "properties": {
+        "name": "Tsit'oyo'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.50663170603903, 35.41514096456924]
+      },
+      "properties": {
+        "name": "Tipu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.50663170603903, 35.41514096456924]
+      },
+      "properties": {
+        "name": "Chitqawt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.81150231150778, 35.40059008467752]
+      },
+      "properties": {
+        "name": "Tsiqsitye"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.60825524119528, 35.37819898675278]
+      },
+      "properties": {
+        "name": "Chitpu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.56842980174216, 35.387156171854116]
+      },
+      "properties": {
+        "name": "Chitneqle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.43110070017966, 35.40842550027198]
+      },
+      "properties": {
+        "name": "Chimonimu'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.88085350779684, 35.267271556893334]
+      },
+      "properties": {
+        "name": "Petpatsu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.70644554881247, 35.25717970063741]
+      },
+      "properties": {
+        "name": "Wexetmimu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.74489769724997, 35.32107355899771]
+      },
+      "properties": {
+        "name": "Tipexpa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.5320375898281, 35.34011985706728]
+      },
+      "properties": {
+        "name": "Tech"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.41530785349997, 35.34684100832768]
+      },
+      "properties": {
+        "name": "Tkiye"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.49221215037497, 35.28296750164084]
+      },
+      "properties": {
+        "name": "Chena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.38212361049906, 35.280247048997566]
+      },
+      "properties": {
+        "name": "Omimu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.58846058559672, 35.25333694931199]
+      },
+      "properties": {
+        "name": "Tsimosmu'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.84938587856547, 35.2073448576094]
+      },
+      "properties": {
+        "name": "Chanu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.78724446010844, 35.17648189813575]
+      },
+      "properties": {
+        "name": "Tsikyiw"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.73231281948344, 35.16918530392313]
+      },
+      "properties": {
+        "name": "Tsipaxatu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.61283650112406, 35.187144973223376]
+      },
+      "properties": {
+        "name": "Pismu'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.29148640346781, 35.25894395711588]
+      },
+      "properties": {
+        "name": "Chihlkukunach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.49610676479594, 35.174798126823696]
+      },
+      "properties": {
+        "name": "Chiliqin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.35397114467875, 35.18658379362238]
+      },
+      "properties": {
+        "name": "Chixwale"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.54376402197425, 35.134938694851876]
+      },
+      "properties": {
+        "name": "Chimoli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.19563474951332, 35.130446267229225]
+      },
+      "properties": {
+        "name": "Tso"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.38995542822425, 35.114720818804486]
+      },
+      "properties": {
+        "name": "Wasna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.43802061377113, 35.069774241474434]
+      },
+      "properties": {
+        "name": "Stemeqtaimi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.47097959814613, 35.03492360872311]
+      },
+      "properties": {
+        "name": "Nipumu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.24246789967904, 35.02645121251876]
+      },
+      "properties": {
+        "name": "Wenexe'l"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.97055627858529, 35.020828167248965]
+      },
+      "properties": {
+        "name": "Sxalwilimu'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.82162635738955, 34.936791646852306]
+      },
+      "properties": {
+        "name": "Lishawato'w"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.51170509274111, 34.9063893494114]
+      },
+      "properties": {
+        "name": "'Axwasph"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.66070716793642, 34.90188434753696]
+      },
+      "properties": {
+        "name": "'Ataxis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.60577552731142, 34.851186050680944]
+      },
+      "properties": {
+        "name": "Lospe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.43951073564234, 34.862455040864745]
+      },
+      "properties": {
+        "name": "'Anaquwuk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.80938847319459, 35.10773497531804]
+      },
+      "properties": {
+        "name": "K'o'owshup"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.61850102202271, 34.95030016334373]
+      },
+      "properties": {
+        "name": "Kuywam"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.24611695165474, 34.870733195968114]
+      },
+      "properties": {
+        "name": "Snisewi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.17605717436646, 34.853506004138126]
+      },
+      "properties": {
+        "name": "Siswow"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.11288578764771, 34.834909320029595]
+      },
+      "properties": {
+        "name": "Lonsoqoq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.51011021391724, 34.83152765330385]
+      },
+      "properties": {
+        "name": "S'axpilil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.49363072172974, 34.78642549455716]
+      },
+      "properties": {
+        "name": "Step"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.21897251860474, 34.80728831108375]
+      },
+      "properties": {
+        "name": "Washlayik"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.31853611723756, 34.758788235380095]
+      },
+      "properties": {
+        "name": "Saqsiyol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.05074436919068, 34.74694086259904]
+      },
+      "properties": {
+        "name": "Soxtonokmu'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.00061924712037, 34.82194551003212]
+      },
+      "properties": {
+        "name": "Heqep"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.95134313572228, 34.76108093910708]
+      },
+      "properties": {
+        "name": "Hawamiw"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.77279273005966, 34.76390141330001]
+      },
+      "properties": {
+        "name": "Siwil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.55726097066446, 34.65959878785698]
+      },
+      "properties": {
+        "name": "Lompo'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.40438927650041, 34.63434930376812]
+      },
+      "properties": {
+        "name": "Shipuk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.1616595541938, 34.6846163043549]
+      },
+      "properties": {
+        "name": "Xonxon'ata"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.91858704442818, 34.69534351175406]
+      },
+      "properties": {
+        "name": "'Aqitsu'm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.6079194407798, 34.57048450035203]
+      },
+      "properties": {
+        "name": "Noqto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.49702619126808, 34.511095925888064]
+      },
+      "properties": {
+        "name": "Shilimaqshtush"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.41915957322114, 34.57322916432186]
+      },
+      "properties": {
+        "name": "Xalam"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.32714907517426, 34.56305161132535]
+      },
+      "properties": {
+        "name": "'Iliyaqsh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.19114497523833, 34.53760227974876]
+      },
+      "properties": {
+        "name": "Naxuwi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.03733638148833, 34.581709506871846]
+      },
+      "properties": {
+        "name": "Kalawashaq'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.16539576869536, 34.68397073625948]
+      },
+      "properties": {
+        "name": "Xonxon'ata"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.91362608854433, 34.69243976577597]
+      },
+      "properties": {
+        "name": "'Aqitsu'm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.88523396003359, 34.65292157024372]
+      },
+      "properties": {
+        "name": "Stuk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.75751789558046, 34.66534717392566]
+      },
+      "properties": {
+        "name": "Saq'ka'ya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.84472187507265, 34.63823436414481]
+      },
+      "properties": {
+        "name": "Wililik'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.84903496596309, 34.5535179744782]
+      },
+      "properties": {
+        "name": "Wishap"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.77899712416621, 34.54164122748196]
+      },
+      "properties": {
+        "name": "Shnoxsh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.62021979105468, 34.58577302391359]
+      },
+      "properties": {
+        "name": "Siwaya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.80492743265624, 34.572204723911675]
+      },
+      "properties": {
+        "name": "Mi'asap"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.73076971781249, 34.54053674539917]
+      },
+      "properties": {
+        "name": "Shniwax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.90311774027343, 34.55184812156265]
+      },
+      "properties": {
+        "name": "He'lxman"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.0417371290887, 34.58414092426621]
+      },
+      "properties": {
+        "name": "Kalawshaq'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.3432410199836, 34.46943222136486]
+      },
+      "properties": {
+        "name": "Texax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.41259221627266, 34.46377112981983]
+      },
+      "properties": {
+        "name": "Shisholop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.30353666274216, 34.4784891691877]
+      },
+      "properties": {
+        "name": "Kashtayit"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.23006559340622, 34.47622502438895]
+      },
+      "properties": {
+        "name": "'Onomyo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.13050199477341, 34.47565897858932]
+      },
+      "properties": {
+        "name": "Shishuch'i'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.06355405776169, 34.467733934215865]
+      },
+      "properties": {
+        "name": "Qasil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.96914030043747, 34.45527877264111]
+      },
+      "properties": {
+        "name": "Mikiw"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.95334745375779, 34.44395428614856]
+      },
+      "properties": {
+        "name": "Kuya'mu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.84518049707584, 34.42377455765073]
+      },
+      "properties": {
+        "name": "Heliyik"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.83556745996647, 34.430571074857724]
+      },
+      "properties": {
+        "name": "Helo'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.81977461328678, 34.42264175106018]
+      },
+      "properties": {
+        "name": "'Alkash"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.83007429590397, 34.44586121800419]
+      },
+      "properties": {
+        "name": "S'axpilil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.57086874475928, 34.51717821187987]
+      },
+      "properties": {
+        "name": "Shnaxalyiwi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.70133139124366, 34.458883947710696]
+      },
+      "properties": {
+        "name": "Xana'yan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.69583822718116, 34.41244580108076]
+      },
+      "properties": {
+        "name": "Syuxtun"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.6319801949546, 34.427172885327714]
+      },
+      "properties": {
+        "name": "Shalawa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.55850912561866, 34.41867680712356]
+      },
+      "properties": {
+        "name": "Q'oloq'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.5063240670249, 34.39601637817553]
+      },
+      "properties": {
+        "name": "Mishnopshno"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.46993185511084, 34.38128380812572]
+      },
+      "properties": {
+        "name": "Shuku"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.28728415003272, 34.4662437227067]
+      },
+      "properties": {
+        "name": "Mat'ilha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.2920906685874, 34.410179865599936]
+      },
+      "properties": {
+        "name": "S'omis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.10188986292334, 34.438782795847544]
+      },
+      "properties": {
+        "name": "Sis'a"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.15962349206127, 34.44426892002455]
+      },
+      "properties": {
+        "name": "'Awha'y"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.93303047448315, 34.46861457592735]
+      },
+      "properties": {
+        "name": "S'eqp'e"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.01130806237377, 34.40688736354516]
+      },
+      "properties": {
+        "name": "'Alalhew"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.05319343835033, 34.38592372569582]
+      },
+      "properties": {
+        "name": "Mupu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.14657722741283, 34.342846813361504]
+      },
+      "properties": {
+        "name": "Sisxulkuy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.09988533288158, 34.342846813361504]
+      },
+      "properties": {
+        "name": "Kach'antuk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.29969917565502, 34.28670026538198]
+      },
+      "properties": {
+        "name": "Shisholop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.22828804284252, 34.28896954068643]
+      },
+      "properties": {
+        "name": "'Alkuy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.18708931237377, 34.26967874738334]
+      },
+      "properties": {
+        "name": "Kanaputeqnon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.96598945885815, 34.580626184743]
+      },
+      "properties": {
+        "name": "Shumpashi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.18095582368227, 34.21025733151818]
+      },
+      "properties": {
+        "name": "Kasunalmu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.98182862641664, 34.207985932681716]
+      },
+      "properties": {
+        "name": "Lalimanux"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.95092957856508, 34.243185734407994]
+      },
+      "properties": {
+        "name": "Kayiwish"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.86897911524424, 34.340759744531695]
+      },
+      "properties": {
+        "name": "Kimishax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.7618624160255, 34.41839745603243]
+      },
+      "properties": {
+        "name": "Kamulus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.71139397120128, 34.331883371388805]
+      },
+      "properties": {
+        "name": "Ta'pau"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.81473412012706, 34.287076734057635]
+      },
+      "properties": {
+        "name": "Shimiyi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.90784900646348, 34.19358922753391]
+      },
+      "properties": {
+        "name": "S'apwi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.92089527111192, 34.159505082809524]
+      },
+      "properties": {
+        "name": "Sumuawawa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.79492578165376, 34.147193714022116]
+      },
+      "properties": {
+        "name": "Hipuk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.06409082071626, 34.112522338559046]
+      },
+      "properties": {
+        "name": "Muwu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.71630487100923, 34.11820714510988]
+      },
+      "properties": {
+        "name": "Ta'lopop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.92078613957233, 34.05758245139895]
+      },
+      "properties": {
+        "name": "Lisiqishi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.85160493077902, 34.04976430588654]
+      },
+      "properties": {
+        "name": "Loxostox"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.7733273428884, 34.032694951680725]
+      },
+      "properties": {
+        "name": "Sumo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.6745647149769, 34.04691965209228]
+      },
+      "properties": {
+        "name": "Humaliwo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.58942067200815, 34.11345953131146]
+      },
+      "properties": {
+        "name": "Topa'nga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.62100636536752, 34.19357911321919]
+      },
+      "properties": {
+        "name": "Huwam [Hukxa'oynga]"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.39972815186572, 34.02256272827807]
+      },
+      "properties": {
+        "name": "Anyapax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.53911718995165, 34.03394403856096]
+      },
+      "properties": {
+        "name": "Nanawani"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.55147680909228, 34.05215095943289]
+      },
+      "properties": {
+        "name": "Swaxil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.61224493653368, 34.01573320940705]
+      },
+      "properties": {
+        "name": "Lu'upsh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.67541632325243, 34.02313183004689]
+      },
+      "properties": {
+        "name": "Xaxas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.69944891602587, 33.981577374189]
+      },
+      "properties": {
+        "name": "Liyam"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.7118085351665, 34.04646171655581]
+      },
+      "properties": {
+        "name": "Mashchal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.74030432374072, 34.05271986272397]
+      },
+      "properties": {
+        "name": "Ch'ishi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.84330114991259, 33.984424218288424]
+      },
+      "properties": {
+        "name": "Shawa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.827164980479, 34.0697851860949]
+      },
+      "properties": {
+        "name": "L'alale"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.86081061036181, 34.03963412121539]
+      },
+      "properties": {
+        "name": "Ch'oloshush"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.89788946778368, 34.061821796155165]
+      },
+      "properties": {
+        "name": "L'akayamu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.05719122559618, 34.0208554000752]
+      },
+      "properties": {
+        "name": "Hichimin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.12860235840868, 34.027115435576285]
+      },
+      "properties": {
+        "name": "Slimihi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.97822699219775, 33.96563328533464]
+      },
+      "properties": {
+        "name": "Qshiwqshiw"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.0307553735454, 33.93829360703465]
+      },
+      "properties": {
+        "name": "Helewashkuy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.08706030518603, 33.92291117859922]
+      },
+      "properties": {
+        "name": "Nilal'uy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.16877112061572, 33.93373614011011]
+      },
+      "properties": {
+        "name": "Nawani"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.22861289942728, 34.013262712541696]
+      },
+      "properties": {
+        "name": "Nimkilkil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.18810081446634, 34.00757086147052]
+      },
+      "properties": {
+        "name": "Niaqla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.40330705279179, 34.062196877880545]
+      },
+      "properties": {
+        "name": "Niwoyomi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.31919297808476, 34.043992114244176]
+      },
+      "properties": {
+        "name": "Tuqan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.9253563822031, 34.75579896007081]
+      },
+      "properties": {
+        "name": "Shuxwiyuxus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.81137322790623, 34.708397557959366]
+      },
+      "properties": {
+        "name": "Mat'apxa'w"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.85531854040623, 34.842630886657744]
+      },
+      "properties": {
+        "name": "Kashtiq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.94595574743748, 34.9237415897716]
+      },
+      "properties": {
+        "name": "Mat'apxwelxwel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.20688104040623, 34.96764311719248]
+      },
+      "properties": {
+        "name": "Tashlipun"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.30575799353123, 34.957514081956155]
+      },
+      "properties": {
+        "name": "Malapwan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.41012811071873, 34.86291606670122]
+      },
+      "properties": {
+        "name": "Sqene'n"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.72873162634373, 34.887865861887214]
+      },
+      "properties": {
+        "name": "Tsiwikon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.2437157572031, 35.02124449080615]
+      },
+      "properties": {
+        "name": "Wenexe'l"
+      }
+    }
+  ]
+}

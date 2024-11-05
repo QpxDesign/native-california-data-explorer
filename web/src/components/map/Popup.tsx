@@ -1,6 +1,15 @@
 import mapboxgl, { MapMouseEvent } from "mapbox-gl";
 import Metadata from "../../assets/Metadata.json";
 
+export function VillagePopup(map: React.RefObject<any>, e: MapMouseEvent) {
+  if (map.current === null) return; // JSON.stringify(JSON.parse(JSON.stringify(e.features[0])).properties).Name
+  if (e.features === undefined || e.features.length === 0) return;
+  let po = new mapboxgl.Popup()
+    .setLngLat(e.lngLat)
+    .setHTML(e.features[0].properties?.name ?? "WHOOP")
+    .addTo(map.current);
+}
+
 export function ShapePopup(map: React.RefObject<any>, e: MapMouseEvent) {
   if (map.current === null) return; // JSON.stringify(JSON.parse(JSON.stringify(e.features[0])).properties).Name
   if (e.features === undefined || e.features.length === 0) return;
@@ -16,7 +25,7 @@ export function ShapePopup(map: React.RefObject<any>, e: MapMouseEvent) {
   let po = new mapboxgl.Popup()
     .setLngLat(e.lngLat)
     .setHTML(
-      (e.features[0].properties?.Name ?? "WHOOP") + " - " + metadata_title
+      (e.features[0].properties?.Name ?? "WHOOP") + " - " + metadata_title,
     )
     .addTo(map.current);
 }
